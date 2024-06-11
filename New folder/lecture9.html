@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+          background:  palevioletred;
+          border: 3px solid black;
+          margin: 2px;
+          padding: 2px;
+          /* height: 800px; */
+          display: flex;
+  
+        }
+        .box{
+          height: 50px;
+          width: 50px;
+          border: 3px solid black;
+          margin: 2px;
+          padding: 2px;
+        }
+        #box1{    
+          background-color: rebeccapurple;
+    
+        }
+  
+        #box2{
+          background-color: red;
+         
+        }
+  
+        #box3{
+          background-color: powderblue;
+        }
+  
+        #box4{
+          background-color: peachpuff;
+          }
+
+       @media  (min-width : 200px){
+        .container{
+            /* flex-direction: row; */
+            background: rebeccapurple;
+
+        }
+       }
+       /* @media (max-width : 200px){
+        .container{
+            flex-direction: column;
+
+        }
+       } */
+  
+      </style>
+</head>
+<body>
+
+
+     
+    <div class=" container">
+        <div class="box" id="box1" >1</div>
+        <div class="box" id="box2" >2</div>
+        <div class="box" id="box3" >3</div>
+        <div class="box" id="box4" >4</div>
+ 
+ 
+     </div>
+
+
+    
+</body>
+</html>

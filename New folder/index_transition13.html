@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> transition </title>
+    <style>
+       .box{
+        height: 300px;
+        width: 300px;
+        text-align: center;
+        background: palegreen;
+        border: 3px solid black ;
+
+        /* transition-property: width ; */
+        /* transition-property: all ;
+        transition-duration: 1s; */
+        /* transition-delay: 1s; */
+        /* transition-timing-function: linear; */
+        /* transition-timing-function: ease-in; */
+        /* transition-timing-function: ease-in-out; */
+
+        /* shorthand notation 4types */
+        /* transition: all 2s ease-in 3s; */
+        transition:  width 1s , height 4s;
+       }
+       .box:hover{
+
+        border-radius: 50px;
+         background-color: red;
+         width: 600px;
+         height: 500px;
+       
+        }
+ 
+
+    </style>
+</head>
+<body>
+
+    <div class="box"> 
+
+        MRF   <br>  pseudo class
+
+
+    </div>
+    
+</body>
+</html>

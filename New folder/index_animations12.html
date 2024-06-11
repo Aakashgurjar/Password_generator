@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  animations </title>
+
+    <style>
+        *{
+            margin: 4px;
+            padding: 2px;
+            box-sizing: border-box;
+        }
+      .container{
+        width: 100vw;
+        height: 100vh;
+        background: aquamarine;
+        border: 2px solid black;
+      
+      }
+      .box{
+        width: 105px;
+        height: 105px;
+        background: pink;
+        border: 3px solid black;
+        border-radius:50px ;
+        margin: 5px;
+        padding: 0px;
+        position: relative;
+
+        animation-name: rightmovement ;
+
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        animation-timing-function: linear ;        
+        /* animation-timing-function: linear;         */
+        /* animation-timing-function: ease-in;         */
+        /* animation-timing-function: ease-out; */
+        /* animation-timing-function: ease-in-out;         */
+        /* animation-timing-function: ease;         */
+        /* animation-timing-function: cubic-bezier(0.290, 0.610, 0.355, 1); */
+
+         
+        /* return to bounce back animation-direction property  */
+        /* animation-direction: reverse;  */
+        /* animation-direction: alternate;  */
+        /* animation-direction: alternate-reverse;  */
+
+        /* animation-fill-mode: forwards; */
+        /* animation-fill-mode: backwards; */
+
+         /* animation-play-state: running;         */
+        /* animation-play-state: running;  */
+
+        /* short hand notation  */
+        /* duration | timing func/easing func | delay | iteration-count | direction | fill-mode | play-state | name | */
+        /* animation: 0.5s linear 2s infinite alternate none running rightmovement ; */
+
+      }
+      /* bheem box */
+      @keyframes rightmovement{
+        from {
+          /* top: 0px;*/
+          
+
+            top: 0px;
+            left: 0px;
+
+        }
+        to {
+            /* top: 1200px; */
+
+            top: 0px;
+            left: 1400px;
+
+        }
+
+        /* 0%{
+          
+            transform: translateX(0);
+        }
+        100%{
+            /* transform: translateX(calc(-100% - 32px)); 
+            transform: translateX( calc(-100% - 32px) );
+
+        } */
+      }
+
+      #ig1{
+        border-radius: 50px;
+        padding: 0px;
+        margin: 0px;
+      }
+        
+
+
+
+
+   /*  dolphin box  */
+      .box1{
+        text-align: center;
+        width: 105px;
+        height: 105px;
+        background: pink;
+        border: 3px solid black;
+        border-radius:50px ;
+        margin: 5px;
+        padding: 0px;
+        position: relative;
+       /* duration | timing func/easing func | delay | iteration-count | direction | fill-mode | play-state | name | */
+        animation: 3s linear 1s infinite alternate none paused leftmovement ;
+
+      }
+      @keyframes leftmovement{
+        from {
+            top: 440px;
+            left: 1350px;
+        }
+        to {
+            top: 440px;
+            left: 0;
+        }
+      }
+
+       #box1{
+        border-radius: 50px;
+        padding: 0px;
+        margin: 0px; 
+      }
+
+
+      /* red  box  */
+      #circle{
+        width: 100px;
+        height: 100px;
+        background: red;
+        border: 3px solid black;
+        border-radius: 50px ;
+        margin: 10px;
+        position: relative;
+        top: 30%;
+        left: 40%;
+
+        animation: 10s ease-in-out 0s infinite alternate none paused circlemovement ;
+
+
+      }
+  
+      @keyframes circlemovement{
+       0% {
+
+        top: 1%;
+        left: 5%;
+
+       }
+       30%{
+
+        top: 5%;
+        left: 90%;
+
+       }
+       60%{
+
+        top: 70%;
+        left: 10%;
+
+       }
+       90%{
+
+        top: 75%;
+        left: 90%;
+
+       }  
+
+       /*  more than 4  */
+        
+      }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container"> 
+        <div class="box" >
+           <img id="ig1" src="bheem.jpeg" alt= "dolphin"  height="100px" width="100px" >
+           
+           <!-- <img id="ig1" src="bheem.jpeg" alt= "dolphin"  height="100px" width="100px" > -->
+            <!-- <p> Lorem ipsum dolor, sit amet consectetur adipisicing. Lorem ipsum dolor, sit amet consectetur adipisicing.  Lorem ipsum dolor, sit amet consectetur adipisicing.</p> -->
+    
+        </div>
+
+        <div id="circle">   circle    </div>
+
+
+
+         <div class="box1">
+             <!-- welcome   -->
+             <img id="box1" src="dolphin.webp" alt= "dolphin"  height="100px" width="100px">
+    
+         </div>
+       
+    
+      </div>
+    
+</body>
+</html>
